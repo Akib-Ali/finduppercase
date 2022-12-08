@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Print UpperCase Letter</h1>
+</body>
+<script>
+    let input = "My Name Is Akib Ali a quick brown Fox Jumps over"
+    let expectedoutput = "MNIAAFJ"
+
+    let uppercase = ["M", "N", "I", "A", "J", "S", "F", "T"];
+
+    let output = ""
+    for(let i = 0; i < input.length; i++){
+
+        for(let j =0; j < uppercase.length; j++){
+
+            if(input[i] == uppercase[j]){
+
+                output = output + input[i]
+
+            }
+
+        }
+
+    }
+
+    console.log(`Input  == ${input}`)
+    console.log(`expected Output == ${expectedoutput}`)
+
+    console.log(`output ${output}`)
+
+
+</script>
+</html>
